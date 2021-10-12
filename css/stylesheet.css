@@ -43,8 +43,7 @@
 /* mobile */
 @media only screen and (max-width: 550px) {		/* Verrander deze naar de juiste mobiele maat!! En doe dat ook voor tablet! */
 	#stelviofoto{
-		width: 400px;
-		float: left;
+		width: 400px;		
 	}
 	
 	#oostenrijkfoto{
