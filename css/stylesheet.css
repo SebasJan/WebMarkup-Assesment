@@ -6,7 +6,7 @@
 		clear: both;
 		margin: 10px;		
 		position: relative;
-		top: -100px;
+		top: -30px;
 	}
 	
 	#oostenrijkfoto{
@@ -15,7 +15,7 @@
 		clear: both;
 		margin: 10px;
 		position: relative;
-		top: -100px;
+		top: -30px;
 	}
 	
 	#strassefoto{
@@ -24,7 +24,7 @@
 		clear: both;
 		margin: 10px;
 		position: relative;
-		top: -100px;
+		top: -30px;
 	}
 	
 	#article1{
@@ -42,7 +42,22 @@
 
 /* mobile */
 @media only screen and (max-width: 550px) {		/* Verrander deze naar de juiste mobiele maat!! En doe dat ook voor tablet! */
-
+	#stelviofoto{
+		width: 400px;
+		float: left;
+	}
+	
+	#oostenrijkfoto{
+		width: 400px;
+	}
+	
+	#strassefoto{
+		width: 400px;
+	}
+	
+	#article1{
+		
+	}
 }
 
 
@@ -52,7 +67,7 @@
 	#stelviofoto{
 		float: left;
 		width: 300px;		
-		margin: 10px;		
+		margin: 10px;
 	}
 	
 	#oostenrijkfoto{
@@ -65,18 +80,19 @@
 		float: left;
 		width: 300px;	
 		margin: 10px;		
-	}
+	}	
+	
 	#article1{
 		margin-bottom: 100px;
-		position: relative;
+		
 	}
 	#article2{
 		margin-bottom: 100px;
-		position: relative;
+		
 	}
 	#article3{
 		margin-bottom: 100px;
-		position: relative;
+		
 	}
 
 }
