@@ -1,97 +1,18 @@
 /* pc */
 @media only screen and (min-width: 1280px) {		
-	#stelviofoto{
-		float: right;
-		width: 400px;
-		clear: both;
-		margin: 10px;		
-		position: relative;
-		top: -30px;
-	}
 	
-	#oostenrijkfoto{
-		float: right;
-		width: 400px;		
-		clear: both;
-		margin: 10px;
-		position: relative;
-		top: -30px;
-	}
-	
-	#strassefoto{
-		float: right;
-		width: 400px;	
-		clear: both;
-		margin: 10px;
-		position: relative;
-		top: -30px;
-	}
-	
-	#article1{
-		margin-bottom: 100px;
-	}
-	#article2{
-		margin-bottom: 100px;
-	}
-	#article3{
-		margin-bottom: 100px;
-	}
 }
 
 
 
 /* mobile */
 @media only screen and (max-width: 550px) {		/* Verrander deze naar de juiste mobiele maat!! En doe dat ook voor tablet! */
-	#stelviofoto{
-		width: 400px;		
-	}
 	
-	#oostenrijkfoto{
-		width: 400px;
-	}
-	
-	#strassefoto{
-		width: 400px;
-	}
-	
-	#article1{
-		
-	}
 }
 
 
 
 /* tablet */
 @media only screen and (min-width: 551px) and (max-width: 1179px) {
-	#stelviofoto{
-		float: left;
-		width: 300px;		
-		margin: 10px;
-	}
-	
-	#oostenrijkfoto{
-		float: left;
-		width: 300px;		
-		margin: 10px;		
-	}
-	
-	#strassefoto{
-		float: left;
-		width: 300px;	
-		margin: 10px;		
-	}	
-	
-	#article1{
-		margin-bottom: 100px;
-		
-	}
-	#article2{
-		margin-bottom: 100px;
-		
-	}
-	#article3{
-		margin-bottom: 100px;
-		
-	}
 
 }
