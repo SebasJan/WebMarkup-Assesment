@@ -40,6 +40,11 @@
 	#navbar{
 		background-color: #99b3ff;		
 	}
+	#coockie{
+		color: #FFF;
+		opacity: 0.5;
+		background-color: #FA0;
+	}
 	video{
 		background-color: #ff9999;
 		margin: 10px;
