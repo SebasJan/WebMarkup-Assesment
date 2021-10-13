@@ -13,37 +13,58 @@
 		padding: 20px;
 		float: left;
 	}
+	ul > li{		
+		display: inline;
+		padding: 8px;
+		background-color: #9966ff;		
+		text-decoration: none;
+		margin: 30px;
+		text-align: center;
+	}
+	ul{
+		list-style-type: none;
+		overflow: hidden;		
+	}
+	ul > img{
+		margin: 10px;
+	}
 	#article1{
 		grid-area: article1Tag;
 		width: 500px;
 		margin-bottom: 150px;
+		background-color: #bf80ff;
+		padding: 5px;
 	}
 	#article2{
 		grid-area: article2Tag;
 		width: 500px;
 		margin-bottom: 150px;
+		background-color: #4dff4d;
+		padding: 5px;
 	}
 	#article3{
 		grid-area: article3Tag;
 		width: 500px;
 		margin-bottom: 150px;
+		background-color: #ffd633;
+		padding: 5px;
 	}
 	#stelviofoto{
 		position: absolute;
 		left: 550px;
-		bottom: -200px;
+		bottom: -10px;
 		width: 600px;
 	}
 	#oostenrijkfoto{
 		position: absolute;
 		left: 550px;
-		bottom: -600px;
+		bottom: -430px;
 		width: 600px;
 	}
 	#strassefoto{
 		position: absolute;
 		left: 550px;
-		bottom: -1000px;
+		bottom: -850px;
 		width: 600px;
 	}
 	nav{
@@ -64,18 +85,23 @@
 		grid-area: asideTag;
 		position: absolute;
 		left: 76vw;
-		top: 90vh;
+		top: 70vh;
+		background-color: #00cccc;
+		padding: 10px;
 	}
 	#footer{
 		background-color: black;
 		color: white;
 		grid-area: footerTag;
+		padding: 10px;
+		text-align: left;
 	}
 	#coockie{
 		color: #FFF;
 		background-color: #FA0;
-		opacity: 0,5;
+		opacity: 0.5;
 		grid-area: coockieTag;
+		text-align: center;
 	}
 	#grid-container {
     background-color: #f8f;
@@ -90,7 +116,7 @@
     'headerTag   headerTag   headerTag   headerTag   headerTag   headerTag'
 	'videoTag    videoTag    videoTag    videoTag    videoTag    videoTag'
 	'article1Tag article1Tag article2Tag article2Tag article3Tag asideTag'
-    'footerTag   footerTag   footerTag   footerTag   footerTag   footerTag';
+    'footerTag   footerTag   footerTag   footerTag   coockieTag  coockieTag';
 	}
 	video{
 		background-color: #ff9999;
