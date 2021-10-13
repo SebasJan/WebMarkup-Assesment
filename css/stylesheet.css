@@ -63,8 +63,19 @@
 	aside{
 		grid-area: asideTag;
 		position: absolute;
-		left: 90vw;
-		bottom: 1vh;
+		left: 76vw;
+		top: 90vh;
+	}
+	#footer{
+		background-color: black;
+		color: white;
+		grid-area: footerTag;
+	}
+	#coockie{
+		color: #FFF;
+		background-color: #FA0;
+		opacity: 0,5;
+		grid-area: coockieTag;
 	}
 	#grid-container {
     background-color: #f8f;
