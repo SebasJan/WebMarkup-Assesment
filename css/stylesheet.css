@@ -14,27 +14,77 @@
 		float: left;
 	}
 	#article1{
-		background-color: red;
+		grid-area: article1Tag;
+		width: 500px;
+		margin-bottom: 150px;
 	}
 	#article2{
-		background-color: yellow;
+		grid-area: article2Tag;
+		width: 500px;
+		margin-bottom: 150px;
 	}
 	#article3{
-		background-color:  #66ffff;
+		grid-area: article3Tag;
+		width: 500px;
+		margin-bottom: 150px;
 	}
-	#aside{
-		float: right;		
-		background-color: #ff99c2;
-		margin: 0 1.5%;
-		width: 30%;
+	#stelviofoto{
+		position: absolute;
+		left: 550px;
+		bottom: -200px;
+		width: 600px;
 	}
-	#navbar{
-		background-color: #99b3ff;		
+	#oostenrijkfoto{
+		position: absolute;
+		left: 550px;
+		bottom: -600px;
+		width: 600px;
+	}
+	#strassefoto{
+		position: absolute;
+		left: 550px;
+		bottom: -1000px;
+		width: 600px;
+	}
+	nav{
+		background-color: #99b3ff;	
+		grid-area: navTag;
+	}
+	header{
+		grid-area: headerTag;
+	}
+	footer{
+		grid-area: footerTag;
+	}
+	video{
+		grid-area: videoTag;
+		position: relative;
+	}
+	aside{
+		grid-area: asideTag;
+		position: absolute;
+		left: 90vw;
+		bottom: 1vh;
+	}
+	#grid-container {
+    background-color: #f8f;
+    border: solid 10px #f0f;
+    padding: 5px;
+
+    display: grid;
+    grid-gap: 5px;
+
+    grid-template-areas:
+    'navTag      navTag      navTag      navTag      navTag      navTag'
+    'headerTag   headerTag   headerTag   headerTag   headerTag   headerTag'
+	'videoTag    videoTag    videoTag    videoTag    videoTag    videoTag'
+	'article1Tag article1Tag article2Tag article2Tag article3Tag asideTag'
+    'footerTag   footerTag   footerTag   footerTag   footerTag   footerTag';
 	}
 	video{
 		background-color: #ff9999;
 		margin: 10px;
-	}
+	}	
 }
 
 
