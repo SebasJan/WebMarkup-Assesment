@@ -8,11 +8,6 @@
 		background-color: #999999;
 		color: white;
 	}
-	.flex-container{		
-		margin: 10px;
-		padding: 20px;
-		float: left;
-	}
 	ul > li{		
 		display: inline;
 		padding: 8px;
@@ -31,9 +26,12 @@
 	#destination1{
 		grid-area: destination1Tag;
 		width: 500px;
-		margin-bottom: 150px;
+		margin-bottom: 130px;
 		background-color: #bf80ff;
 		padding: 5px;
+		position: relative;
+		left: 650px;
+		height: 500px;
 	}
 	#destination2{
 		grid-area: destination2Tag;
@@ -41,6 +39,8 @@
 		margin-bottom: 150px;
 		background-color: #4dff4d;
 		padding: 5px;
+		position: relative;
+		bottom: 650px;
 	}
 	#destination3{
 		grid-area: destination3Tag;
@@ -48,6 +48,9 @@
 		margin-bottom: 150px;
 		background-color: #ffd633;
 		padding: 5px;
+		position: relative;
+		bottom: 1010px;
+		left: 65vw;
 	}
 	#destination4{
 		grid-area: destination4Tag;
@@ -55,6 +58,9 @@
 		margin-bottom: 150px;
 		background-color: #ffd633;
 		padding: 5px;
+		position: relative;
+		left: 65vw;
+		bottom: 125vh;
 	}
 	#destination5{
 		grid-area: destination5Tag;
@@ -62,31 +68,32 @@
 		margin-bottom: 150px;
 		background-color: #ffd633;
 		padding: 5px;
+		position: relative;
+		bottom: 160vh;
 	}
 	#destination6{
 		grid-area: destination6Tag;
-		width: 500px;
+		width: 900px;
 		margin-bottom: 150px;
 		background-color: #ffd633;
 		padding: 5px;
+		position: relative;
+		bottom: 180vh;
+		left: 850px;
 	}
 	#stelviofoto{
 		position: absolute;
-		left: 550px;
-		bottom: -10px;
-		width: 600px;
+		width: 400px;
+		left: 70vw;
 	}
 	#oostenrijkfoto{
 		position: absolute;
-		left: 550px;
-		bottom: -430px;
-		width: 600px;
+		width: 400px;
+		left: 35vw;
 	}
 	#strassefoto{
 		position: absolute;
-		left: 550px;
-		bottom: -850px;
-		width: 600px;
+		width: 400px;
 	}
 	nav{
 		background-color: #99b3ff;	
@@ -98,17 +105,10 @@
 	footer{
 		grid-area: footerTag;
 	}
-	video{
-		grid-area: videoTag;
-		position: relative;
-	}
 	aside{
 		grid-area: asideTag;
-		position: absolute;
-		left: 76vw;
-		top: 70vh;
-		background-color: #00cccc;
-		padding: 10px;
+		position: absolute;	
+		top: 1000px;
 	}
 	#footer{
 		background-color: black;
@@ -124,6 +124,9 @@
 		grid-area: coockieTag;
 		text-align: center;
 	}
+	#info{
+		grid-area: infoTag;
+	}
 	#grid-container {
     background-color: #f8f;
     border: solid 10px #f0f;
@@ -135,12 +138,8 @@
     grid-template-areas:
     'navTag      navTag      navTag      navTag      navTag      navTag'
     'headerTag   headerTag   headerTag   headerTag   headerTag   headerTag'	
-	'article1Tag article1Tag article2Tag article2Tag article3Tag asideTag'
+	'infoTag 	infoTag    infoTag     	infoTag 	infoTag 		infoTag'
     'footerTag   footerTag   footerTag   footerTag   coockieTag  coockieTag';
-	}
-	video{
-		background-color: #ff9999;
-		margin: 10px;
 	}	
 }
 
