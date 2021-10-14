@@ -1,3 +1,5 @@
+/* index */
+
 * {
     padding: 0;
     margin: 0;
@@ -17,7 +19,23 @@
         'oostenrijkTag oostenrijkTag  asideTag'
         'duitslandTag duitslandTag  asideTag'
         'footerTag  footerTag   cookieTag';
-}
+}    
+
+#grid-container-best {
+            width: 100%;
+            display: grid;
+        
+            grid-template-areas:
+                'headerTag          headerTag           headerTag'
+                'navTag             navTag              navTag'        
+                'destination2Tag    destination1Tag     destination3Tag'
+                'destination5Tag    destination1Tag     destination4Tag'
+                'destination5Tag    destination6Tag     destination6Tag' 
+                'asidebestTag       asidebestTag        asidebestTag'
+                'footerTag          footerTag           cookieTag';    
+        }
+        
+
 
 
 /*tablet*/
@@ -35,6 +53,16 @@
             'footerTag  footerTag   cookieTag';
     }
 
+    #grid-container-best {
+        grid-template-areas:
+                'headerTag          headerTag           headerTag'
+                'navTag             navTag              navTag'        
+                'destination2Tag    destination1Tag     destination3Tag'
+                'destination5Tag    destination1Tag     destination4Tag'
+                'destination5Tag    destination6Tag     destination6Tag' 
+                'asidebestTag       asidebestTag        asidebestTag'
+                'footerTag          footerTag           cookieTag'; 
+    }   
 }
 
 
@@ -157,10 +185,6 @@ nav {
     width: 100px;
 }
 
-#mobile-nav {
-    grid-area: navTag;
-}
-
 article {
     padding: 30px;
 }
@@ -178,3 +202,63 @@ article {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+/*best destinations */
+
+#destination1{
+    grid-area: destination1Tag;
+    background-color: #8381ff;
+}
+#destination2{
+    grid-area: destination2Tag;
+    background-color: #90ff81;
+}
+#destination3{
+    grid-area: destination3Tag;
+    background-color: #ff8181;
+}
+#destination4{
+    grid-area: destination4Tag;
+    background-color: #e6ff08;
+}
+#destination5{
+    grid-area: destination5Tag;
+    background-color: #81fff5;
+}
+#destination6{
+    grid-area: destination6Tag;
+    background-color: #15ff00;
+}
+#asidebest{
+    color: white;
+    grid-area: asidebestTag;
+    background-color: #0400ff;
+    padding: 10px;
+}
+#asideimage1{
+    position: relative;
+    width: 500px;
+    clear: both;
+    padding: 2px;
+}
+#asideimage2{
+    position: relative;
+    width: 500px;
+    clear: both;
+    padding: 2px;
+}
+#asideimage3{
+    position: relative;
+    width: 500px;
+    clear: both;
+    padding: 2px;
+}
