@@ -5,7 +5,6 @@
 }
 
 /*Pc grid*/
-
 #grid-container {
     width: 100%;
     display: grid;
@@ -14,9 +13,9 @@
         'headerTag  headerTag   headerTag'
         'navTag     navTag      navTag'
         'videoTag   videoTag    videoTag'
-        'newyorkTag newyorkTag  asideTag'
-        'losangelesTag losangelesTag  asideTag'
-        'sanfranciscoTag sanfranciscoTag  asideTag'
+        'stelvioTag stelvioTag  asideTag'
+        'oostenrijkTag oostenrijkTag  asideTag'
+        'duitslandTag duitslandTag  asideTag'
         'footerTag  footerTag   cookieTag';
 }
 
@@ -30,9 +29,9 @@
             'navTag     navTag      navTag'
             'asidetag   asideTag    asideTag'
             'videoTag   videoTag    videoTag'
-            'sanfranciscoTag sanfranciscoTag  sanfranciscoTag'
-            'losangelesTag losangelesTag  losangelesTag'
-            'newyorkTag newyorkTag  newyorkTag'
+            'duitslandTag duitslandTag  duitslandTag'
+            'oostenrijkTag oostenrijkTag  oostenrijkTag'
+            'stelvioTag stelvioTag  stelvioTag'
             'footerTag  footerTag   cookieTag';
     }
 
@@ -47,9 +46,9 @@
             'headerTag  headerTag   navTag'
             'asidetag   asideTag    asideTag'
             'videoTag   videoTag    videoTag'
-            'sanfranciscoTag sanfranciscoTag  sanfranciscoTag'
-            'losangelesTag losangelesTag  losangelesTag'
-            'newyorkTag newyorkTag  newyorkTag'
+            'duitslandTag duitslandTag  duitslandTag'
+            'oostenrijkTag oostenrijkTag  oostenrijkTag'
+            'stelvioTag stelvioTag  stelvioTag'
             'footerTag  footerTag   cookieTag';
     }
 	
@@ -123,22 +122,22 @@ nav {
 
 #articlestelvio {
     background-color: #abe95b;
-    grid-area: newyorkTag;
+    grid-area: stelvioTag;
 }
 
 #articleOostenrijk {
     background-color: #8381ff;
-    grid-area: losangelesTag;
+    grid-area: oostenrijkTag;
 }
 
 #articleDuitsland {
     background-color: #ff7cd8;
-    grid-area: sanfranciscoTag;
+    grid-area: duitslandTag;
 }
 
 #asideHome {
     background-color: #ff0000;
-    width: 25em;
+    width: 30em;
     padding: 50px;
     float: left;
     grid-area: asideTag;
@@ -163,11 +162,11 @@ nav {
 }
 
 article {
-    padding: 50px;
+    padding: 30px;
 }
 
 .articleImage {
-    width: 200px;
+    width: 400px;
     float: right;
     clear: both;
     position: relative;
