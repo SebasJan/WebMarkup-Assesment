@@ -7,99 +7,109 @@
 		<link rel= "stylesheet" type= "text/css" href= "css/stylesheet.css" />		
 	</head>	
 			
-	<body id="grid-container">
-	<header>		
-		
+<body>
+	<section id="grid-container">
+	<header>			
 		<h1>RoadTrips</h1>
-		<h2>"The best trips for on the road."</h2>			
-			
+		<h2>"The best trips for on the road."</h2>	
 	</header>
-	<nav>
-				<ul>
-					<img src="img/logo.png" id="logo" width="100" height="100"/>
-					<li class="navitems"><a href="bestdestinations.html"/>Best destinations</li>
-					<li class="navitems"><a href="tickets.html">Tickets</li></a>
-					<li class="navitems"><a href="contact.html">Contact</li></a>
-				</ul>
-			</nav>
+	
+	<nav id="hamburger">
+		<label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger" />
+        <section id="hamitems">
+			<a href="bestdestinations.html">Best destionations</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="contact.html">Contact</a>
+		</section>
+	</nav>
 			
 	<section id="video">
 		<video width="320" height="240" autoplay="autoplay">
 			<source src="video/videomp4.mp4" type="video/mp4">
 			<source src="video/videoogg.ogg" type="video/mp4">
+			Your browers does not support this video.
 		</video>
-	</section>
-	
-		<section>
-			<article id="article1">				
-					<h2>Stelviopas (Italië)</h2>					
-						<p>					
-						ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna
-						cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut
-						morbi tincidunt augue interdum velit euismod in pellentesque massa
-						placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in
-						ante metus dictum at tempor commodo ullamcorper a lacus vestibulum
-						sed arcu non odio euismod lacinia at quis risus sed vulputate odio ut enim blandit volutpat maecenas 
-						volutpat blandit aliquam etiam erat velit
-						scelerisque in dictum non
-						</p>
-						<footer>foto afkomstig van: &copy; ANWB.nl</footer>	
-							<p><a href="https://www.anwb.nl/vakantie/inspiratie/de-mooiste-plekken-in-de-alpen" target="blank">more info</p></a>
-							<a href="https://www.anwb.nl/vakantie/inspiratie/de-mooiste-plekken-in-de-alpen" target="blank">
-								<img src="img/stelvio.png" id="stelviofoto"/>
-							</a>					
-			</article>
-			
-			<article id="article2">				
-					<h2>Grossglockner Hochalpenstrasse (Oostenrijk)</h2>						
-						<p>				
-						ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna
-						cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut
-						morbi tincidunt augue interdum velit euismod in pellentesque massa
-						placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in
-						ante metus dictum at tempor commodo ullamcorper a lacus vestibulum
-						sed arcu non odio euismod lacinia at quis risus sed vulputate odio ut enim blandit volutpat maecenas 
-						volutpat blandit aliquam etiam erat velit
-						scelerisque in dictum non
-						</p>
-						<footer>foto afkomstig van: &copy; ANWB.nl</footer>
-							<p><a href="https://www.anwb.nl/vakantie/zoeken/land=Oostenrijk" target="blank">more info</p></a>
-							<a href="https://www.anwb.nl/vakantie/inspiratie/de-mooiste-plekken-in-de-alpen" target="blank">
-								<img src="img/oostenrijk.png" id="oostenrijkfoto"/>
-							</a>
-			</article>	
-			
-			<article id="article3">				
-					<h2>Romantische Strasse (Duitsland)</h2>
-							<p>						
-							ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna
-							cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut
-							morbi tincidunt augue interdum velit euismod in pellentesque massa
-							placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in
-							ante metus dictum at tempor commodo ullamcorper a lacus vestibulum
-							sed arcu non odio euismod lacinia at quis risus sed vulputate odio ut enim blandit volutpat maecenas 
-							volutpat blandit aliquam etiam erat velit
-							scelerisque in dictum non
-							</p>
-							<footer>foto afkomstig van: &copy; ANWB.nl</footer>
-							<p><a href="https://www.anwb.nl/vakantie/duitsland/beieren/bezienswaardigheden" target="blank">more info</p></a>
-							<a href="https://www.anwb.nl/vakantie/duitsland/beieren/bezienswaardigheden" target="blank">
-								<img src="img/strasse.png" id="strassefoto"/>
-							</a>												
-			</article>
+	</section>	
+
+	<article id="articlestelvio">				
+		<h2>Stelviopas (Italië)</h2>
+		<section class="article-container">
+			<p class="articleParagraph"> 					
+				ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna
+				cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut
+				morbi tincidunt augue interdum velit euismod in pellentesque massa
+				placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in
+				ante metus dictum at tempor commodo ullamcorper a lacus vestibulum
+				sed arcu non odio euismod lacinia at quis risus sed vulputate odio ut enim blandit volutpat maecenas 
+				volutpat blandit aliquam etiam erat velit
+				scelerisque in dictum non
+				<a href="https://www.anwb.nl/vakantie/inspiratie/de-mooiste-plekken-in-de-alpen" target="blank">more info</a>
+			</p>			
+			<a href="https://www.anwb.nl/vakantie/inspiratie/de-mooiste-plekken-in-de-alpen" target="blank">
+				<img src="img/stelvio.png" class="articleImage" copyright="ANWB"/>
+			</a>	
 		</section>
-		<aside>
-			<h3>5 andere routes om eens te bekijken!</h3>
-			<ol>
-				<li>Bergspektakel: Trollenroute (Noorwegen)</li>
-				<li>Oerkrachten: Ringweg (IJsland)</li>
-				<li>Portproeverijen: Dourovallei (Portugal)</li>
-				<li>Eilandhoppen: Atlantische weg (Noorwegen)</li>
-				<li>Wildebras: Ring of Kerry (Ierland)</li>
-			</ol>
-		</aside>
-		<footer id="footer">&copy; Sebastiaan van Vliet</footer>
-		<p id="coockie">Cookie statement</p>
-	</body>
+	</article>
+			
+	<article id="articleOostenrijk">				
+		<h2>Grossglockner Hochalpenstrasse (Oostenrijk)</h2>
+		<section class="article-container">
+			<p class="articleParagraph">				
+				ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna
+				cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut
+				morbi tincidunt augue interdum velit euismod in pellentesque massa
+				placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in
+				ante metus dictum at tempor commodo ullamcorper a lacus vestibulum
+				sed arcu non odio euismod lacinia at quis risus sed vulputate odio ut enim blandit volutpat maecenas 
+				volutpat blandit aliquam etiam erat velit
+				scelerisque in dictum non
+				<a href="https://www.anwb.nl/vakantie/zoeken/land=Oostenrijk" target="blank">more info</a>
+			</p>				
+				<a href="https://www.anwb.nl/vakantie/inspiratie/de-mooiste-plekken-in-de-alpen" target="blank">
+					<img src="img/oostenrijk.png" copyright="ANWB" class="articleImage"/>
+				</a>
+		</section>
+	</article>	
+			
+	<article id="article3">				
+		<h2>Romantische Strasse (Duitsland)</h2>
+		<section class="article-container">
+			<p class="articleParagraph">						
+				ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna
+				cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut
+				morbi tincidunt augue interdum velit euismod in pellentesque massa
+				placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in
+				ante metus dictum at tempor commodo ullamcorper a lacus vestibulum
+				sed arcu non odio euismod lacinia at quis risus sed vulputate odio ut enim blandit volutpat maecenas 
+				volutpat blandit aliquam etiam erat velit
+				scelerisque in dictum non
+				<a href="https://www.anwb.nl/vakantie/duitsland/beieren/bezienswaardigheden" target="blank">more info</a>
+			</p>							
+				<a href="https://www.anwb.nl/vakantie/duitsland/beieren/bezienswaardigheden" target="blank">
+					<img src="img/strasse.png" copyright="ANWB" class="articleImage"/>
+				</a>
+		</section>				
+	</article>
+			
+	<aside>			
+		<ol start="1">
+			<li>Bergspektakel: Trollenroute (Noorwegen)</li>
+			<li>Oerkrachten: Ringweg (IJsland)</li>
+			<li>Portproeverijen: Dourovallei (Portugal)</li>
+			<li>Eilandhoppen: Atlantische weg (Noorwegen)</li>
+			<li>Wildebras: Ring of Kerry (Ierland)</li>
+		</ol>
+	</aside>
+		
+	<footer id="footer">&copy; Sebastiaan van Vliet</footer>
+		
+	<section id="cookieStatement">
+		Cookie statement
+    </section>
+	
+</section>	
+
+</body>
 
 </<html lang="en" />
