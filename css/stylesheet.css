@@ -1,16 +1,181 @@
-/* pc */
-@media only screen and (min-width: 1280px) {	
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/*Pc grid*/
+
+#grid-container {
+    width: 100%;
+    display: grid;
+
+    grid-template-areas:
+        'headerTag  headerTag   headerTag'
+        'navTag     navTag      navTag'
+        'videoTag   videoTag    videoTag'
+        'newyorkTag newyorkTag  asideTag'
+        'losangelesTag losangelesTag  asideTag'
+        'sanfranciscoTag sanfranciscoTag  asideTag'
+        'footerTag  footerTag   cookieTag';
+}
 
 
+/*tablet*/
+@media (min-width: 481px) and (max-width: 1179px) {
 
-/* mobile */
-@media only screen and (max-width: 550px) {		/* Verrander deze naar de juiste mobiele maat!! En doe dat ook voor tablet! */
+    #grid-container {
+        grid-template-areas:
+            'headerTag  headerTag   headerTag'
+            'navTag     navTag      navTag'
+            'asidetag   asideTag    asideTag'
+            'videoTag   videoTag    videoTag'
+            'sanfranciscoTag sanfranciscoTag  sanfranciscoTag'
+            'losangelesTag losangelesTag  losangelesTag'
+            'newyorkTag newyorkTag  newyorkTag'
+            'footerTag  footerTag   cookieTag';
+    }
+
+}
+
+
+/*mobile*/
+@media (max-width: 480px) {
+
+    #grid-container {
+        grid-template-areas:
+            'headerTag  headerTag   navTag'
+            'asidetag   asideTag    asideTag'
+            'videoTag   videoTag    videoTag'
+            'sanfranciscoTag sanfranciscoTag  sanfranciscoTag'
+            'losangelesTag losangelesTag  losangelesTag'
+            'newyorkTag newyorkTag  newyorkTag'
+            'footerTag  footerTag   cookieTag';
+    }
 	
+	#hamitems a {
+		box-sizing: border-box;
+		display: block;
+		width: 100%;
+		border-top: 1px solid #333;
+	}
+  
+	#hamnav label { 
+		display: inline-block; 
+		color: white;
+		background: #a02620;
+		font-style: normal;
+		font-size: 1.2em;
+		padding: 10px;
+	}    
+
+	#hamitems { 
+		display: none; 
+	}
+	
+	#hamnav input:checked ~ #hamitems { 
+		display: block; 
+	}
 }
 
 
 
-/* tablet */
-@media only screen and (min-width: 551px) and (max-width: 1179px) {
-
+/*Hamburger PC screen*/
+#hamnav {
+  width: 100%;
+  background: rgb(204, 18, 18);  
 }
+
+#hamitems { 
+display: flex; 
+}
+
+#hamitems a {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  color: rgb(3, 0, 0);
+  text-decoration: none;
+  text-align: center;
+}
+#hamitems a:hover { 
+background: #2bff00; 
+}
+
+#hamnav label, #hamburger { 
+display: none; 
+}
+/* */
+
+#Homeheader{
+    background-color: #cc00bb;    
+}
+
+nav {
+    background-color: #22cc00;
+    grid-area: navTag;
+}
+
+#video {
+    background-color: #ad48ff;
+    grid-area: videoTag;
+}
+
+#articlestelvio {
+    background-color: #abe95b;
+    grid-area: newyorkTag;
+}
+
+#articleOostenrijk {
+    background-color: #8381ff;
+    grid-area: losangelesTag;
+}
+
+#articleDuitsland {
+    background-color: #ff7cd8;
+    grid-area: sanfranciscoTag;
+}
+
+#asideHome {
+    background-color: #ff0000;
+    width: 25em;
+    padding: 50px;
+    float: left;
+    grid-area: asideTag;
+}
+
+#footer {
+    background-color: #ff9204;
+    grid-area: footerTag;
+}
+
+#cookieStatement {
+    background-color: #ff6600;
+    grid-area: cookieTag;
+}
+
+#logo {
+    width: 100px;
+}
+
+#mobile-nav {
+    grid-area: navTag;
+}
+
+article {
+    padding: 50px;
+}
+
+.articleImage {
+    width: 200px;
+    float: right;
+    clear: both;
+    position: relative;
+    top: -120px;
+}
+
+.articleParagraph {
+    width: 50%;
+}
+
+
