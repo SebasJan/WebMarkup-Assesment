@@ -108,7 +108,7 @@
     background-color: #f8f;
     border: solid 10px #f0f;
     padding: 5px;
-
+	margin: 100%;
     display: grid;
     grid-gap: 5px;
 
