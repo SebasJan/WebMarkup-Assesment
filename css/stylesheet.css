@@ -35,21 +35,20 @@
                 'footerTag          footerTag           cookieTag';    
         }
 
- #grid-container-tickets {
-            width: 100%;
+ #grid-container-tickets {            
             display: grid;
             grid-template-columns: 40% 35% auto;            
             grid-template-areas:
-                'headerTag          headerTag           headerTag'
-                'navTag             navTag              navTag'        
-                'ticketsinfoTag    ticketsinfoTag     ticketsinfoTag'
-                'ticketsTag    ticketsTag     asideticketsTag'
-                'ticketsTag    ticketsTag     asideticketsTag' 
-                'ticketsTag       ticketsTag        asideticketsTag'
-                'ticketsTag       ticketsTag        asideticketsTag'
-                'ticketsTag       ticketsTag        asideticketsTag'
-                'asidebestTag       asidebestTag        asideticketsTag'
-                'footerTag          footerTag           cookieTag';    
+                'headerTag          headerTag       headerTag'
+                'navTag             navTag          navTag'        
+                'ticketsinfoTag     ticketsinfoTag  ticketsinfoTag'
+                'ticketsTag         ticketsTag      asideticketsTag'
+                'ticketsTag         ticketsTag      asideticketsTag' 
+                'ticketsTag         ticketsTag      asideticketsTag'
+                'ticketsTag         ticketsTag      asideticketsTag'
+                'ticketsTag         ticketsTag      asideticketsTag'
+                'copyTag            copyTag         asideticketsTag'
+                'footerTag          footerTag       cookieTag';            
         }
 
 /* PC MEDIA */
@@ -63,7 +62,7 @@
 figure>figcaption {
     float: right;
     clear: both;
-}        
+}       
 }
 
 /*tablet*/
@@ -127,20 +126,41 @@ figure>figcaption {
     }
 
     /* tickets */
-#grid-container-tickets {
-        width: 100%;
+    #grid-container-tickets {            
         display: grid;
-    
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto 5vh 5vh 5vh 5vh 5vh 10vh 25vh 10vh;     
         grid-template-areas:
-            'headerTag          headerTag           headerTag'
-            'navTag             navTag              navTag'        
-            'destination2Tag    destination1Tag     destination3Tag'
-            'destination5Tag    destination1Tag     destination4Tag'
-            'destination5Tag    destination6Tag     destination6Tag' 
-            'asidebestTag       asidebestTag        asidebestTag'
-            'footerTag          footerTag           cookieTag';    
+            'headerTag          headerTag'
+            'navTag             navTag'        
+            'ticketsinfoTag    ticketsinfoTag'
+            'ticketsTag          ticketsTag'
+            'ticketsTag         ticketsTag ' 
+            'ticketsTag       ticketsTag'
+            'ticketsTag       ticketsTag'
+            'ticketsTag       ticketsTag'
+            'copyTag            copyTag'
+            'asideticketsTag     asideticketsTag'
+            'footerTag          cookieTag';            
     }
-    
+    #ticketimage3{
+        display: none;
+    }
+    #ticketimage1{
+        width: 400px;
+        padding: 10px;
+        position: relative;
+        left: 30px;
+    }
+    #ticketimage2{
+        width: 400px;
+        padding: 10px;
+        position: relative;
+        left: 60px;
+    }
+    #asidetickets{
+        align-items: center;
+    }
       
 }
 
@@ -359,6 +379,15 @@ article {
 }
 
 
+
+
+
+
+
+
+
+
+
 /* tickets */
 #tabletickets{
     grid-area: ticketsTag;
@@ -384,14 +413,28 @@ tr:nth-child(odd) {
   }
 #copytable{
     grid-area: copyTag;
+    background-color: #ff7cd8;
+    text-align: center;
+    
 }
 
 #ticketsinfo{
     grid-area: ticketsinfoTag;
     background-color: #31fae9;
+    
 }
-
 #asidetickets{
     grid-area: asideticketsTag;
     background-color: #850164;
+    padding: 10px;
+}
+
+#ticketimage1{
+    width: 400px;
+}
+#ticketimage2{
+    width: 400px;
+}
+#ticketimage3{
+    width: 400px;
 }
