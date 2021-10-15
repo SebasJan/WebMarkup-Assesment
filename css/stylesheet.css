@@ -71,26 +71,41 @@ figure>figcaption {
 
     #grid-container-best {                  
         grid-template-areas:
-            'headerTag           headerTag headerTag headerTag'
-            'navTag              navTag navTag navTag'
-            'destination1Tag destination1Tag    destination2Tag destination2Tag'
-            'destination1Tag  destination1Tag    destination2Tag destination2Tag'
-            'destination3Tag  destination3Tag    destination2Tag destination2Tag'
-            'destination3Tag destination3Tag     destination5Tag destination5Tag'
-            'destination3Tag  destination3Tag    destination5Tag destination5Tag'            
-            'destination3Tag destination3Tag     destination5Tag destination5Tag'
-            'destination6Tag destination6Tag     destination6Tag destination6Tag'
-            'destination6Tag destination6Tag     destination6Tag destination6Tag'
-            'asidebestTag  asidebestTag asidebestTag         asidebestTag'
-            'asidebestTag     asidebestTag asidebestTag      asidebestTag'
-            'footerTag   footerTag        coockieTag coockieTag'
-            'footerTag  footerTag    coockieTag      coockieTag';
+            'headerTag          headerTag           headerTag           headerTag'
+            'navTag             navTag              navTag              navTag'
+            'destination1Tag    destination1Tag     destination2Tag     destination2Tag'
+            'destination1Tag    destination1Tag     destination2Tag     destination2Tag'
+            'destination3Tag    destination3Tag     destination2Tag     destination2Tag'
+            'destination3Tag    destination3Tag     destination5Tag     destination5Tag'
+            'destination3Tag    destination3Tag     destination5Tag     destination5Tag'            
+            'destination3Tag    destination3Tag     destination5Tag     destination5Tag'
+            'destination6Tag    destination6Tag     destination6Tag     destination6Tag'
+            'destination6Tag    destination6Tag     destination6Tag     destination6Tag'
+            'asidebestTag       asidebestTag        asidebestTag        asidebestTag'
+            'asidebestTag       asidebestTag        asidebestTag        asidebestTag'
+            'footerTag          footerTag           coockieTag          coockieTag'
+            'footerTag          footerTag           coockieTag          coockieTag';
     }
     #asideimage3{
         display: none;
     }
+    #asideimage2{
+        position: relative;
+        float: right;
+        left: 15px;
+        top: -290px;
+    }
     #destination4{
         display: none;
+    }
+    #asidebest{
+        height: 300px;
+    }
+    #cookieStatement{
+        position: relative;
+        right: 0;
+        bottom: 0;
+        width: 100px;
     }
       
 }
