@@ -34,12 +34,28 @@
                 'asidebestTag       asidebestTag        asidebestTag'
                 'footerTag          footerTag           cookieTag';    
         }
+
+/* PC MEDIA */
+@media (min-width: 1180px) {        
+            
+ video {
+    width: 320px;
+    height: 240px;
+}
         
-
-
+figure>figcaption {
+    float: right;
+    clear: both;
+}        
+}
 
 /*tablet*/
 @media (min-width: 481px) and (max-width: 1179px) {
+      
+    .articleImage{
+        position: relative;
+        float: left;
+    }
 
     #grid-container {
         grid-template-areas:
@@ -53,27 +69,40 @@
             'footerTag  footerTag   cookieTag';
     }
 
-    #grid-container-best {
+    #grid-container-best {                  
         grid-template-areas:
-                'headerTag          headerTag           headerTag'
-                'navTag             navTag              navTag'        
-                'destination2Tag    destination1Tag     destination3Tag'
-                'destination5Tag    destination1Tag     destination4Tag'
-                'destination5Tag    destination6Tag     destination6Tag' 
-                'asidebestTag       asidebestTag        asidebestTag'
-                'footerTag          footerTag           cookieTag'; 
-    }   
+            'headerTag           headerTag headerTag headerTag'
+            'navTag              navTag navTag navTag'
+            'destination1Tag destination1Tag    destination2Tag destination2Tag'
+            'destination1Tag  destination1Tag    destination2Tag destination2Tag'
+            'destination3Tag  destination3Tag    destination2Tag destination2Tag'
+            'destination3Tag destination3Tag     destination5Tag destination5Tag'
+            'destination3Tag  destination3Tag    destination5Tag destination5Tag'            
+            'destination3Tag destination3Tag     destination5Tag destination5Tag'
+            'destination6Tag destination6Tag     destination6Tag destination6Tag'
+            'destination6Tag destination6Tag     destination6Tag destination6Tag'
+            'asidebestTag  asidebestTag asidebestTag         asidebestTag'
+            'asidebestTag     asidebestTag asidebestTag      asidebestTag'
+            'footerTag   footerTag        coockieTag coockieTag'
+            'footerTag  footerTag    coockieTag      coockieTag';
+    }
+    #asideimage3{
+        display: none;
+    }
+    #destination4{
+        display: none;
+    }
+      
 }
 
 
 /*mobile*/
-@media (max-width: 480px) {
+@media screen and (max-width: 481px) {    
 
     #grid-container {
         grid-template-areas:
             'headerTag  headerTag   navTag'
-            'asidetag   asideTag    asideTag'
-            'videoTag   videoTag    videoTag'
+            'asidetag   asideTag    asideTag'            
             'duitslandTag duitslandTag  duitslandTag'
             'oostenrijkTag oostenrijkTag  oostenrijkTag'
             'stelvioTag stelvioTag  stelvioTag'
@@ -83,7 +112,7 @@
 	#hamitems a {
 		box-sizing: border-box;
 		display: block;
-		width: 100%;
+		width: 50%;
 		border-top: 1px solid #333;
 	}
   
@@ -103,6 +132,14 @@
 	#hamnav input:checked ~ #hamitems { 
 		display: block; 
 	}
+
+    video{
+        display: none;
+    }
+
+    #logo {
+        display: none;
+    }
 }
 
 
@@ -114,7 +151,7 @@
 }
 
 #hamitems { 
-display: flex; 
+    display: flex; 
 }
 
 #hamitems a {
@@ -135,7 +172,7 @@ display: none;
 /* */
 
 #Homeheader{
-    background-color: #cc00bb;    
+    background-color: #5ccc00;    
 }
 
 nav {
@@ -268,3 +305,8 @@ article {
     clear: both;
     padding: 2px;
 }
+
+
+
+
+
