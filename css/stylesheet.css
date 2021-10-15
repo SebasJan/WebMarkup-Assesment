@@ -158,6 +158,9 @@ figure>figcaption {
 }
 
 
+.selectednav{
+    background-color: #2bff00;
+}
 
 /*Hamburger PC screen*/
 #hamnav {
