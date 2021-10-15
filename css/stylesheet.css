@@ -35,6 +35,20 @@
                 'footerTag          footerTag           cookieTag';    
         }
 
+ #grid-container-tickets {
+            width: 100%;
+            display: grid;
+        
+            grid-template-areas:
+                'headerTag          headerTag           headerTag'
+                'navTag             navTag              navTag'        
+                'destination2Tag    destination1Tag     destination3Tag'
+                'destination5Tag    destination1Tag     destination4Tag'
+                'destination5Tag    destination6Tag     destination6Tag' 
+                'asidebestTag       asidebestTag        asidebestTag'
+                'footerTag          footerTag           cookieTag';    
+        }
+
 /* PC MEDIA */
 @media (min-width: 1180px) {        
             
@@ -85,6 +99,19 @@ figure>figcaption {
             'asidebestTag       asidebestTag        asidebestTag        asidebestTag'
             'footerTag          footerTag           coockieTag          coockieTag'
             'footerTag          footerTag           coockieTag          coockieTag';
+    }
+#grid-container-tickets {
+        width: 100%;
+        display: grid;
+    
+        grid-template-areas:
+            'headerTag          headerTag           headerTag'
+            'navTag             navTag              navTag'        
+            'destination2Tag    destination1Tag     destination3Tag'
+            'destination5Tag    destination1Tag     destination4Tag'
+            'destination5Tag    destination6Tag     destination6Tag' 
+            'asidebestTag       asidebestTag        asidebestTag'
+            'footerTag          footerTag           cookieTag';    
     }
     #asideimage3{
         display: none;
