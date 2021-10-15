@@ -51,6 +51,22 @@
                 'footerTag          footerTag       cookieTag';            
         }
 
+#grid-container-contact {            
+            display: grid;
+            grid-template-columns: 35% auto auto;            
+            grid-template-areas:
+                'headerTag          headerTag       headerTag'
+                'navTag             navTag          navTag'        
+                'ticketsinfoTag     ticketsinfoTag  ticketsinfoTag'
+                'ticketsTag         ticketsTag      asideticketsTag'
+                'ticketsTag         ticketsTag      asideticketsTag' 
+                'ticketsTag         ticketsTag      asideticketsTag'
+                'ticketsTag         ticketsTag      asideticketsTag'
+                'ticketsTag         ticketsTag      asideticketsTag'
+                'copyTag            copyTag         asideticketsTag'
+                'footerTag          footerTag       cookieTag';            
+        }
+
 /* PC MEDIA */
 @media (min-width: 1180px) {        
             
@@ -160,6 +176,24 @@ figure>figcaption {
     }
     #asidetickets{
         align-items: center;
+    }
+
+#grid-container-contact {            
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto 5vh 5vh 5vh 5vh 5vh 10vh 25vh 10vh;     
+        grid-template-areas:
+            'headerTag          headerTag'
+            'navTag             navTag'        
+            'ticketsinfoTag    ticketsinfoTag'
+            'ticketsTag          ticketsTag'
+            'ticketsTag         ticketsTag ' 
+            'ticketsTag       ticketsTag'
+            'ticketsTag       ticketsTag'
+            'ticketsTag       ticketsTag'
+            'copyTag            copyTag'
+            'asideticketsTag     asideticketsTag'
+            'footerTag          cookieTag';            
     }
       
 }
@@ -437,4 +471,24 @@ tr:nth-child(odd) {
 }
 #ticketimage3{
     width: 400px;
+}
+
+
+
+
+
+
+
+
+/* tickets */
+#asidecontact{
+    grid-area: asidecontactTag;
+}
+
+#contactform{
+    background-color: #ff04ab;
+    grid-area: contactTag;
+}
+#message{
+    width: 100px;
 }

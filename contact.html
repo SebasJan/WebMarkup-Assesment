@@ -4,11 +4,11 @@
 <!-- Head [webmarkup assesment] [] -->
 	<head>
 		<title>Road trips</title>	
-		<link rel= "stylesheet" type= "text/css" href= "css/stylesheet.css" />		
+		<!-- <link rel= "stylesheet" type= "text/css" href= "css/stylesheet.css" />		 -->
 	</head>	
 			
 <body>
-	<section id="grid-container-best">
+	<section id="grid-container-contact">
 	<header id="Homeheader">
 		<img src="img/logo.png" id="logo">
 		<h1>RoadTrips</h1>
@@ -25,104 +25,41 @@
             <a class="selectednav" href="contact.html">Contact</a>
 		</section>
 	</nav>
-
-	<article id="destination1">				
-		<h2>Bergspektakel: Trollenroute (Noorwegen)</h2>
-		<section class="article-container">
-			<p class="articleParagraph"> 					
-				ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna
-				cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut
-				morbi tincidunt augue interdum velit euismod in pellentesque massa
-				placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in
-				ante metus dictum at tempor commodo ullamcorper a lacus vestibulum
-				sed arcu non odio euismod lacinia at quis risus sed vulputate odio ut enim blandit volutpat maecenas 
-				volutpat blandit aliquam etiam erat velit
-				scelerisque in dictum non				
-			</p>			
-		</section>
-	</article>
+	
+	<fieldset id="contactform">
+			<legend>Contact by email:</legend>
 			
-	<article id="destination2">				
-		<h2>Oerkrachten: Ringweg (IJsland)</h2>
-		<section class="article-container">
-			<p class="articleParagraph">				
-				ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna
-				cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut
-				morbi tincidunt augue interdum velit euismod in pellentesque massa
-				placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in
-				ante metus dictum at tempor commodo ullamcorper a lacus vestibulum
-				sed arcu non odio euismod lacinia at quis risus sed vulputate odio ut enim blandit volutpat maecenas 
-				volutpat blandit aliquam etiam erat velit
-				scelerisque in dictum non
-			</p>			
-		</section>
-	</article>	
+			<h2>Please select the topic you would like to contact us about. So, we can serve you better and faster. </h2>
+			<p>Where is your question about?</p>
+			<label>Make a choice</label>
+				<select id="question">
+					<option value="..">...</option>
+					<option value="order">I have a question about an order</option>
+					<option value="computer info">I like to have more information about a computer</option>
+					<option value="different">I have another question</option>
+				</select>
+					
+			<h2>Your question:</h2>
+			<form autocomplete="on">
+				<label for="question">Your question:</label><br>
+					<input type="text" id="message" name="message" maxLength="500" placeholder="Your question here">
+					<p>max of 500 characters.</p>
+				<label for="file*">Add an attachment? (optional)</label><br>
+					<input type="file" id="file" name="file"><br><br>
+					
+			<h2>Your information:</h2>
+				<label for="flname">First and last name*:</label><br>
+					<input type="text" id="name" size="35" name="name"><br><br>
+				<label for="phone">Phone number</label><br>
+					<input type="text" id="phone"  size="8" name="phone" placeholder="0612345678">
+					<p>More than 80% of our customers share their phone number, so we can help you better.</p><br>
+				<label for="email">E-mail address*</label><br>
+					<input type="email" size="25" id="email" name="email" required  placeholder="Something@something.whatever"><br><br>
+				<input type="submit" value="Send email">
+			</form>
+		</fieldset>
 			
-	<article id="destination3">				
-		<h2>Droomplekken: Corniche (Frankrijk)</h2>
-		<section class="article-container">
-			<p class="articleParagraph">						
-				ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna
-				cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut
-				morbi tincidunt augue interdum velit euismod in pellentesque massa
-				placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in
-				ante metus dictum at tempor commodo ullamcorper a lacus vestibulum
-				sed arcu non odio euismod lacinia at quis risus sed vulputate odio ut enim blandit volutpat maecenas 
-				volutpat blandit aliquam etiam erat velit
-				scelerisque in dictum non
-			</p>			
-		</section>				
-	</article>
-
-	<article id="destination4">				
-		<h2>Portproeverijen: Dourovallei (Portugal)</h2>
-		<section class="article-container">
-			<p class="articleParagraph">						
-				ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna
-				cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut
-				morbi tincidunt augue interdum velit euismod in pellentesque massa
-				placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in
-				ante metus dictum at tempor commodo ullamcorper a lacus vestibulum
-				sed arcu non odio euismod lacinia at quis risus sed vulputate odio ut enim blandit volutpat maecenas 
-				volutpat blandit aliquam etiam erat velit
-				scelerisque in dictum non
-			</p>			
-		</section>				
-	</article>
-
-	<article id="destination5">				
-		<h2>Eilandhoppen: Atlantische weg (Noorwegen)</h2>
-		<section class="article-container">
-			<p class="articleParagraph">						
-				ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna
-				cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut
-				morbi tincidunt augue interdum velit euismod in pellentesque massa
-				placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in
-				ante metus dictum at tempor commodo ullamcorper a lacus vestibulum
-				sed arcu non odio euismod lacinia at quis risus sed vulputate odio ut enim blandit volutpat maecenas 
-				volutpat blandit aliquam etiam erat velit
-				scelerisque in dictum non
-			</p>			
-		</section>				
-	</article>
-
-	<article id="destination6">				
-		<h2>Wildebras: Ring of Kerry (Ierland) </h2>
-		<section class="article-container">
-			<p class="articleParagraph">						
-				ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna
-				cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut
-				morbi tincidunt augue interdum velit euismod in pellentesque massa
-				placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in
-				ante metus dictum at tempor commodo ullamcorper a lacus vestibulum
-				sed arcu non odio euismod lacinia at quis risus sed vulputate odio ut enim blandit volutpat maecenas 
-				volutpat blandit aliquam etiam erat velit
-				scelerisque in dictum non
-			</p>			
-		</section>				
-	</article>
-			
-	<aside id="asidebest">
+	<aside id="asidecontact">
 		<h3>3 mooiste routes:</h3>		
 		<a href="https://www.anwb.nl/vakantie/inspiratie/de-mooiste-plekken-in-de-alpen" target="blank">
 			<img src="img/stelvio.png" id="asideimage1"/>
