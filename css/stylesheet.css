@@ -461,8 +461,6 @@ tr:first-child {
 tr{
     background-color: #b1b6ff;
 }
-
-
 #copytable{
     grid-area: copyTag;
     background-color: #ff7cd8;
