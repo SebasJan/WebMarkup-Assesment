@@ -1,4 +1,4 @@
-/* index */
+
 
 * {
     padding: 0;
@@ -47,6 +47,7 @@
                 'ticketsTag         ticketsTag      asideticketsTag'
                 'ticketsTag         ticketsTag      asideticketsTag'
                 'ticketsTag         ticketsTag      asideticketsTag'
+                'copyTag            copyTag         asideticketsTag'
                 'copyTag            copyTag         asideticketsTag'
                 'footerTag          footerTag       cookieTag';            
         }
@@ -217,7 +218,7 @@ figure>figcaption {
 }
 
 /*mobile*/
-@media screen and (max-width: 481px) {    
+@media (max-width: 480px) {    
 
     #grid-container {
         grid-template-areas:
