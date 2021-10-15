@@ -179,6 +179,12 @@ nav {
 #cookieStatement {
     background-color: #ff6600;
     grid-area: cookieTag;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 30vw;
+    color: #fff;
+    opacity: 50%;
 }
 
 #logo {
