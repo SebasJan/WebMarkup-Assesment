@@ -75,7 +75,7 @@
 
         
 /* PC MEDIA */
-@media screen and (min-width: 1180px) {        
+@media (min-width: 1180px) {        
 
  /* Index en algemeen */   
  /*Hamburger Pc and tablet*/
@@ -319,7 +319,7 @@ tr{
 
 
 /*tablet media*/
-@media  screen and (min-width: 481px) and (max-width: 1179px) {
+@media (min-width: 481px) and (max-width: 1179px) {
     /* Index en algemeen */
     /*Hamburger Pc and tablet*/
     #hamnav {
@@ -657,7 +657,7 @@ tr{
 
 
 /*mobile*/
-@media (max-width: 480px) {    
+@media (max-device-width: 480px) {    
     .articleParagraph {
         width: 50%;
     }
@@ -669,17 +669,17 @@ tr{
         top: -120px;
     }
     #articlestelvio {
-        background-color: #abe95b;
+        background-color: #ff00aa;
         grid-area: stelvioTag;
         }
     
         #articleOostenrijk {
-        background-color: #8381ff;
+        background-color: #1eff00;
         grid-area: oostenrijkTag;
         }
     
         #articleDuitsland {
-        background-color: #ff7cd8;
+        background-color: #7e7cff;
         grid-area: duitslandTag;
         }
             
@@ -708,7 +708,7 @@ tr{
             'footerTag  footerTag   cookieTag';
     }
 	
-    /* Hamburger menue */
+    /* Hamburger meneu */
 	#hamitems a {
 		box-sizing: border-box;
 		display: block;
