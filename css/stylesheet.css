@@ -75,7 +75,7 @@
 
         
 /* PC MEDIA */
-@media (min-width: 1180px) {        
+@media screen and (min-width: 1180px) {        
 
  /* Index en algemeen */   
  /*Hamburger Pc and tablet*/
@@ -318,7 +318,7 @@ tr{
 
 
 /*tablet media*/
-@media (min-width: 481px) and (max-width: 1179px) {
+@media screen and (min-width: 481px) and (max-width: 1179px) {
     /* Index en algemeen */
     /*Hamburger Pc and tablet*/
     #hamnav {
@@ -658,7 +658,7 @@ tr{
 
 
 /*mobile*/
-@media (max-device-width: 480px) {
+@media screen and (max-device-width: 480px) {
     /* Hamburger meneu */
 	#hamitems a {
 		box-sizing: border-box;
@@ -869,19 +869,22 @@ tr{
         grid-template-columns: auto auto;            
         grid-template-areas:
             'headerTag          navTag'
-            'headerTag             navTag'        
-            'ticketsinfoTag    ticketsinfoTag'
-            'ticketsTag          ticketsTag'
+            'headerTag          navTag'       
+            'ticketsTag         ticketsTag'
             'ticketsTag         ticketsTag ' 
-            'ticketsTag       ticketsTag'
-            'ticketsTag       ticketsTag'
-            'ticketsTag       ticketsTag'
+            'ticketsTag         ticketsTag'
+            'ticketsTag         ticketsTag'
+            'ticketsTag         ticketsTag'
             'copyTag            copyTag'
-            'asideticketsTag     asideticketsTag'
+            'copyTag            copyTag'
+            'asideticketsTag    asideticketsTag'
             'footerTag          cookieTag';            
     }
     #ticketimage3{
-        display: none;
+        width: 400px;
+        padding: 10px;
+        position: relative;
+        left: 30px;
     }
     #ticketimage1{
         width: 400px;
@@ -922,29 +925,19 @@ tr{
     #copytable{
         grid-area: copyTag;
         background-color: #ff7cd8;
-        text-align: center;
-        
-    }
-    
+        text-align: center;        
+    }    
     #ticketsinfo{
-        grid-area: ticketsinfoTag;
-        background-color: #31fae9;
-        
+        display: none;        
     }
     #asidetickets{
         grid-area: asideticketsTag;
         background-color: #850164;
         padding: 10px;
     }    
-    #ticketimage1{
-        width: 400px;
-    }
-    #ticketimage2{
-        width: 400px;
-    }
-    #ticketimage3{
-        width: 400px;
-    }
+    
+
+
 
     /* contact */
     #grid-container-contact {            
