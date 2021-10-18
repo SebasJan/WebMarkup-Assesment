@@ -942,18 +942,22 @@ tr{
     /* contact */
     #grid-container-contact {            
         display: grid;
-        grid-template-columns: 70% 30%;            
+        grid-template-columns: 60% auto;            
         grid-template-areas:
-            'headerTag          headerTag'
-            'navTag             navTag'        
-            'contactTag         asidecontactTag'
-            'contactTag         asidecontactTag'
-            'contactTag         asidecontactTag' 
-            'contactTag         asidecontactTag'
-            'contactTag         asidecontactTag'                
-            'contactTag         asidecontactTag'
-            'footerTag          footerTag'
-            'footerTag          footerTag';            
+            'headerTag              navTag'
+            'headerTag             navTag'        
+            'contactTag             contactTag'
+            'contactTag             contactTag'
+            'contactTag             contactTag' 
+            'contactTag             contactTag'
+            'contactTag             contactTag'                
+            'asidecontactTag         asidecontactTag'
+            'asidecontactTag         asidecontactTag'
+            'asidecontactTag         asidecontactTag'
+            'asidecontactTag         asidecontactTag'
+            'asidecontactTag         asidecontactTag'            
+            'footerTag              cookieTag'
+            'footerTag              cookieTag';            
     }
     #asideticketsimage1{
         width: 200px;
