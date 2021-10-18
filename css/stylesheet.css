@@ -118,7 +118,7 @@
         position: fixed;
         right: 0;
         bottom: 0;
-        width: 30vw;
+        width: 8    vw;
         color: #fff;
         opacity: 50%;
     }    
@@ -212,13 +212,11 @@ tr{
 #copytable{
     grid-area: copyTag;
     background-color: #ff7cd8;
-    text-align: center;
-    
+    text-align: center;    
 }
 #ticketsinfo{
     grid-area: ticketsinfoTag;
-    background-color: #31fae9;
-    
+    background-color: #31fae9;    
 }
 #asidetickets{
     grid-area: asideticketsTag;
@@ -273,19 +271,19 @@ tr{
 }
 #asideimage1{
     position: relative;
-    width: 500px;
+    width: 450px;
     clear: both;
     padding: 2px;
 }
 #asideimage2{
     position: relative;
-    width: 500px;
+    width: 450px;
     clear: both;
     padding: 2px;
 }
 #asideimage3{
     position: relative;
-    width: 500px;
+    width: 450px;
     clear: both;
     padding: 2px;
 }
