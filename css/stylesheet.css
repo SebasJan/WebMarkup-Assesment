@@ -21,7 +21,7 @@
         'oostenrijkTag oostenrijkTag  asideTag'
         'duitslandTag duitslandTag  asideTag'
         'footerTag  footerTag   cookieTag';
-}     
+}    
 
 #grid-container-best {
             width: 100%;
@@ -101,13 +101,12 @@
   display: none; 
     }
     /* */
-
     #asideHome {
-        background-color: #ff0000;        
+        background-color: #ff0000;
+        width: 30em;
+        padding: 50px;
+        float: left;
         grid-area: asideTag;
-        flex-basis: 30%;
-        order: 4;
-        float: right;
     }    
     #footer {
         background-color: #ff9204;
@@ -149,53 +148,26 @@
     margin-left: 25px;
     }
     .articleParagraph {
-        width: 50%;
+    width: 50%;
     }
-    #stelviofoto{
-        float: right;
-        position: relative;
-        width: 400px;
-        top: -100px;
+    .articleImage {
+    width: 400px;
+    float: right;
+    clear: both;
+    position: relative;
+    top: -120px;
     }
-    #oostenrijkfoto{
-        float: right;
-        position: relative;
-        width: 400px;
-        top: -100px;
-    }
-    #duitslandfoto{
-        float: right;
-        position: relative;
-        width: 400px;
-        top: -100px;
-    }
-    
     #articlestelvio {
     background-color: #abe95b;
     grid-area: stelvioTag;
-    height: 250px;
-    flex-basis: 70%;
-    flex-grow: 1;
-    flex-shrink: 1;
-    order: 1;
     }
     #articleOostenrijk {
     background-color: #8381ff;
     grid-area: oostenrijkTag;
-    height: 250px;
-    flex-basis: 70%;
-    flex-grow: 1;
-    flex-shrink: 1;
-    order: 2;
     }
     #articleDuitsland {
     background-color: #ff7cd8;
     grid-area: duitslandTag;
-    height: 250px;
-    flex-basis: 70%;
-    flex-grow: 1;
-    flex-shrink: 1;
-    order: 3;
     }        
     figure>figcaption {
     float: right;
@@ -374,7 +346,10 @@ tr{
 
 
     #asideHome {
-        background-color: #ff0000;        
+        background-color: #ff0000;
+        width: 30em;
+        padding: 50px;
+        float: left;
         grid-area: asideTag;
     }    
     #footer {
@@ -429,7 +404,11 @@ tr{
         grid-area: duitslandTag;
     }
     .articleImage {
-
+        width: 400px;
+        float: left;
+        clear: both;
+        position: relative;
+        top: -120px;
     }
     video{
         width: 500px;
@@ -442,12 +421,22 @@ tr{
         position: relative;
         clear: both;
         bottom: 100px;
-    }     
+    }
+    #grid-container {
+        grid-template-areas:
+            'headerTag  headerTag   headerTag'
+            'navTag     navTag      navTag'
+            'asidetag   asideTag    asideTag'
+            'videoTag   videoTag    videoTag'
+            'duitslandTag duitslandTag  duitslandTag'
+            'oostenrijkTag oostenrijkTag  oostenrijkTag'
+            'stelvioTag stelvioTag  stelvioTag'
+            'footerTag  footerTag   cookieTag';
+    }    
 
 
     /*best dest */
-    #grid-container-best {
-        grid-template-columns: auto auto auto auto;                  
+    #grid-container-best {                  
         grid-template-areas:
             'headerTag          headerTag           headerTag           headerTag'
             'navTag             navTag              navTag              navTag'
@@ -480,11 +469,10 @@ tr{
         height: 300px;
     }
     #cookieStatement{
-        position: fixed;
+        position: relative;
         right: 0;
         bottom: 0;
         width: 100px;
-        grid-area: coockieTag;
     }
     #destination1{
         grid-area: destination1Tag;
@@ -698,9 +686,20 @@ tr{
 
 
     /* Index en algemeen */
-      
+    #grid-container {
+        grid-template-areas:
+            'headerTag  headerTag   navTag'
+            'asidetag   asideTag    asideTag'            
+            'duitslandTag duitslandTag  duitslandTag'
+            'oostenrijkTag oostenrijkTag  oostenrijkTag'
+            'stelvioTag stelvioTag  stelvioTag'
+            'footerTag  footerTag   cookieTag';
+    }    
     #asideHome {
-        background-color: #ff0000;       
+        background-color: #ff0000;
+        width: 30em;
+        padding: 50px;
+        float: left;
         grid-area: asideTag;
     }    
     #footer {
@@ -755,7 +754,11 @@ tr{
         grid-area: duitslandTag;
     }
     .articleImage {
-        
+        width: 400px;
+        float: left;
+        clear: both;
+        position: relative;
+        top: -120px;
     }
     video{
         width: 500px;
@@ -983,10 +986,7 @@ tr{
     #message{
         width: 500px;
         height: 100px;
-    } 
-    
-	
-    
+    }   
 
     video{
         display: none;
@@ -997,7 +997,6 @@ tr{
     }
 }
 /*  */
-
 
 
 
