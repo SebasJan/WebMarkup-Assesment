@@ -933,6 +933,7 @@ fieldset{
     }
     #tabletickets{
         grid-area: ticketsTag;
+        height: 1200px;
     }
     table {
         font-family: arial, sans-serif;
@@ -964,7 +965,7 @@ fieldset{
     #asidetickets{
         grid-area: asideticketsTag;
         background-color: #850164;
-        padding: 10px;
+        padding: 10px;        
     }    
     
 
@@ -991,28 +992,35 @@ fieldset{
             'footerTag              cookieTag';            
     }
     #asideticketsimage1{
-        width: 200px;
+        width: 300px;
+        position: relative;
+        top: 70px;
         margin-bottom: 10px;
     }
     #asideticketsimage2{
-        width: 200px;
+        width: 300px;
+        position: relative;
+        top: 70px;
         margin-bottom: 10px;
     }
     #asideticketsimage3{
-        width: 200px;
+        width: 300px;
+        position: relative;
+        top: 70px;
         margin-bottom: 10px;
     }
     #asidecontact{
         grid-area: asidecontactTag;
         background-color: #ff9204;
         padding: 10px;
-        text-align: center;   
+        text-align: center; 
+        height: 300px;  
     }    
     #contactform{
         background-color: #ff04ab;
         grid-area: contactTag;
         padding: 10px;
-        height: 100vh;
+        height: 70vh;
     }
     #message{
         width: 500px;
