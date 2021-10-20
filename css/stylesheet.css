@@ -101,6 +101,7 @@
   display: none; 
     }
     /* */
+
     #asideHome {
         background-color: #ff0000;
         width: 30em;
@@ -160,14 +161,17 @@
     #articlestelvio {
     background-color: #abe95b;
     grid-area: stelvioTag;
+    height: 250px;
     }
     #articleOostenrijk {
     background-color: #8381ff;
     grid-area: oostenrijkTag;
+    height: 300px;
     }
     #articleDuitsland {
     background-color: #ff7cd8;
     grid-area: duitslandTag;
+    height: 250px;
     }        
     figure>figcaption {
     float: right;
@@ -394,14 +398,17 @@ tr{
     #articlestelvio {
         background-color: #003af7;
         grid-area: stelvioTag;
+        height: 300px;
     }
     #articleOostenrijk {
         background-color: #d0ff00;
         grid-area: oostenrijkTag;
+        height: 300px;
     }
     #articleDuitsland {
         background-color: #ff08b5;
         grid-area: duitslandTag;
+        height: 300px;
     }
     .articleImage {
         width: 400px;
