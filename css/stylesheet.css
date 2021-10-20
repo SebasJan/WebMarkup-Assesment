@@ -555,7 +555,7 @@ fieldset{
     #grid-container-tickets {            
         display: grid;
         grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto 5vh 5vh 5vh 5vh 5vh 10vh 25vh 10vh;     
+        grid-template-rows: auto auto auto 10vh 10vh 10vh 10vh 20vh 10vh 25vh 10vh;     
         grid-template-areas:
             'headerTag          headerTag'
             'navTag             navTag'        
@@ -570,19 +570,21 @@ fieldset{
             'footerTag          cookieTag';            
     }
     #ticketimage3{
-        display: none;
-    }
-    #ticketimage1{
         width: 400px;
         padding: 10px;
         position: relative;
-        left: 30px;
+        left: 80px;
+        clear: both;
+    }
+    #ticketimage1{
+        display: none;
     }
     #ticketimage2{
         width: 400px;
         padding: 10px;
         position: relative;
-        left: 60px;
+        left: 30px;
+        clear: both;
     }
     #asidetickets{
         align-items: center;
@@ -612,28 +614,18 @@ fieldset{
         grid-area: copyTag;
         background-color: #ff7cd8;
         text-align: center;
-        
-    }
-    
+        padding-top: 30px;
+    }   
     #ticketsinfo{
         grid-area: ticketsinfoTag;
-        background-color: #31fae9;
-        
+        background-color: #31fae9;        
     }
     #asidetickets{
         grid-area: asideticketsTag;
         background-color: #850164;
         padding: 10px;
     }    
-    #ticketimage1{
-        width: 400px;
-    }
-    #ticketimage2{
-        width: 400px;
-    }
-    #ticketimage3{
-        width: 400px;
-    }
+    
 
     /* contact */
     #grid-container-contact {            
@@ -963,7 +955,8 @@ fieldset{
     #copytable{
         grid-area: copyTag;
         background-color: #ff7cd8;
-        text-align: center;        
+        text-align: center; 
+        height: 610px;       
     }    
     #ticketsinfo{
         display: none;        
