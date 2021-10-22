@@ -79,14 +79,14 @@
 
  /* Index en algemeen */   
  /*Hamburger Pc and tablet*/
-    #hamnav {
+    #hamburgernavigation {
     width: 100%;
     background: rgb(204, 18, 18);  
     }  
-    #hamitems { 
+    #itemshamnav { 
       display: flex; 
     }  
-    #hamitems a {
+    #itemshamnav a {
     flex-grow: 1;
     flex-basis: 0;
     padding: 10px;
@@ -94,10 +94,10 @@
     text-decoration: none;
     text-align: center;
     }
-    #hamitems a:hover { 
+    #itemshamnav a:hover { 
   background: #2bff00; 
     }  
-    #hamnav label, #hamburger { 
+    #hamburgernavigation label, #hamburger { 
   display: none; 
     }
     /* */
@@ -335,14 +335,14 @@ fieldset{
 @media screen and (min-width: 481px) and (max-width: 1179px) {
     /* Index en algemeen */
     /*Hamburger Pc and tablet*/
-    #hamnav {
+    #hamburgernavigation {
     width: 100%;
     background: rgb(204, 18, 18);  
     }  
-    #hamitems { 
+    #itemshamnav { 
       display: flex; 
     }  
-    #hamitems a {
+    #itemshamnav a {
     flex-grow: 1;
     flex-basis: 0;
     padding: 10px;
@@ -350,10 +350,10 @@ fieldset{
     text-decoration: none;
     text-align: center;
     }
-    #hamitems a:hover { 
+    #itemshamnav a:hover { 
   background: #2bff00; 
     }  
-    #hamnav label, #hamburger { 
+    #hamburgernavigation label, #hamburger { 
   display: none; 
     }
     /* */
@@ -487,8 +487,7 @@ fieldset{
         width: 50%;
         float: left;
         position: relative;
-    }
-    
+    }    
     #destination4{
         display: none;
     }
@@ -536,21 +535,25 @@ fieldset{
         position: relative;
         width: 400px;
         clear: both;
-        padding: 2px;        
-    }       
+        padding: 2px;
+        left: 40px;        
+    }     
     #asideimage3{
         display: none;
-    }
+    } 
     #asideimage2{
         position: relative;
         width: 400px;
         padding: 2px;
         clear: both;
         float: right;
-        left: 0px;
+        left: -43px;
         top: 0px;
     }
     
+
+
+
     /* tickets */
     #grid-container-tickets {            
         display: grid;
@@ -680,14 +683,14 @@ fieldset{
 /*mobile*/
 @media screen and (max-device-width: 480px) {
     /* Hamburger meneu */
-	#hamitems a {
+	#itemshamnav a {
 		box-sizing: border-box;
 		display: block;
 		width: 50%;
 		border-top: 1px solid #333;
 	}
   
-	#hamnav label { 
+	#hamburgernavigation label { 
 		display: inline-block; 
 		color: white;
 		background: #a02620;
@@ -696,11 +699,11 @@ fieldset{
 		padding: 10px;
 	}    
 
-	#hamitems { 
+	#itemshamnav { 
 		display: none; 
 	}
 	
-	#hamnav input:checked ~ #hamitems { 
+	#hamburgernavigation input:checked ~ #itemshamnav { 
 		display: block; 
 	}
 
@@ -778,7 +781,7 @@ fieldset{
         float: left;
         clear: both;
         position: relative;
-        top: -120px;
+        top: -167px;
     }
     video{
         width: 500px;
@@ -790,7 +793,7 @@ fieldset{
         float: right;
         position: relative;
         clear: both;
-        bottom: 100px;
+        bottom: 200px;
     }
     /*  */
        
@@ -798,7 +801,8 @@ fieldset{
 
     /*best dest */
     #grid-container-best {
-        grid-template-columns: 70% auto;                
+        grid-template-columns: 70% auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto 5vh auto;                
         grid-template-areas:
             'headerTag          navTag'
             'headerTag          navTag'
@@ -825,7 +829,11 @@ fieldset{
         display: none;
     }
     #asidebest{
-        height: 300px;
+        height: 800px;
+        color: white;
+        grid-area: asidebestTag;
+        background-color: #0400ff;
+        padding: 10px;
     }
     #cookieStatement{
         position: fixed;
@@ -860,34 +868,36 @@ fieldset{
     }
     #destination6{        
         display: none;
-    }
-    #asidebest{
-        color: white;
-        grid-area: asidebestTag;
-        background-color: #0400ff;
-        padding: 10px;
-    }
+    }    
     #asideimage1{
         position: relative;
-        width: 300px;
+        top: 33px;
+        width: 400px;
     }
     #asideimage2{  
         position: relative;
-        width: 300px;
-        top: 10px;
-        left: -250px;
+        width: 400px;
+        top: 292px;
+        left: -517px;
     }
-    #asideimage3{
-        position: relative;
-        width: 300px;
-        top: 100px;
-        left: 100px;              
+    #asideimage3{ 
+        display: flex;
+        position: relative; 
+        width: 400px; 
+        top: 305px; 
+        left: 41px;         
     }
     .articleParagraph-best{
         height: 200px;
         font-size: 20px;
         padding: 10px;
     }
+    #bestdestheader{
+        background-color: #15ff00;
+        height: 100px;
+        text-align: center;
+        padding-top: 30px;            
+    }    
     
 
 
@@ -909,6 +919,12 @@ fieldset{
             'copyTag            copyTag'
             'asideticketsTag    asideticketsTag'
             'footerTag          cookieTag';            
+    }
+    #Ticketsheader{
+        background-color: #00f7ff;
+        height: 100px;
+        text-align: center;
+        padding-top: 30px; 
     }
     #ticketimage3{
         width: 400px;
