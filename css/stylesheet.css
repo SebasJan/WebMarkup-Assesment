@@ -93,6 +93,7 @@
     color: rgb(3, 0, 0);
     text-decoration: none;
     text-align: center;
+    text-transform: uppercase;
     }
     #itemshamnav a:hover { 
   background: #2bff00; 
@@ -101,7 +102,9 @@
   display: none; 
     }
     /* */
-
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
     #asideHome {
         background-color: #ff0000;
         width: 30em;
@@ -112,6 +115,7 @@
     #footer {
         background-color: #ff9204;
         grid-area: footerTag;
+        font-family: 'Notable', sans-serif;       
     }    
     #cookieStatement {
         background-color: #003cff;
@@ -186,13 +190,13 @@
 
 /* Tickets */
 #asideticketsimage1{
-    width: 500px;
+    width: 24rem;
 }
 #asideticketsimage2{
-    width: 500px;
+    width: 24rem;
 }
 #asideticketsimage3{
-    width: 500px;
+    width: 24rem;
 }
 #tabletickets{
     grid-area: ticketsTag;
@@ -266,7 +270,8 @@ tr{
 }
 #destination4{
     grid-area: destination4Tag;
-    background-color: #e6ff08;
+    background-color: cmyk(0%, 22%, 83%, 0%);
+    background-color: #FFC72C;
 }
 #destination5{
     grid-area: destination5Tag;
@@ -367,7 +372,9 @@ fieldset{
     }
     /* */
 
-
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
     #asideHome {
         background-color: #ff0000;
         width: 30em;
@@ -447,7 +454,7 @@ fieldset{
         float: left;
         clear: both;
         position: relative;
-        top: -120px;
+        top: -110px;
     }
     video{
         width: 500px;
@@ -730,6 +737,9 @@ fieldset{
 
 
     /* Index en algemeen */
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
     #grid-container {
         grid-template-areas:
             'headerTag  headerTag   navTag'
@@ -803,7 +813,7 @@ fieldset{
         float: left;
         clear: both;
         position: relative;
-        top: -167px;
+        top: -199px;
     }
     video{
         width: 500px;
