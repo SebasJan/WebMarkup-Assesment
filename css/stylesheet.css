@@ -119,7 +119,7 @@
         position: fixed;
         right: 0;
         bottom: 0;
-        width: 8    vw;
+        width: 8vw;
         color: rgb(14, 0, 0);
         opacity: 50%;
     }    
@@ -148,10 +148,10 @@
     height: 240px;
     margin-left: 25px;
     }
-    .articleParagraph {
+    .articletext {
     width: 50%;
     }
-    .articleImage {
+    .articlefoto {
     width: 400px;
     float: right;
     clear: both;
@@ -244,7 +244,10 @@ tr{
 
 
 /* Best dest */
-.articleParagraph-best{
+#Ticketsheader{
+    background-color: #00f7ff;        
+}
+.articletext-best{
     width: 40%;
 }
 #destination1{
@@ -295,6 +298,9 @@ tr{
     clear: both;
     padding: 2px;
 }
+#bestdestheader{
+    background-color: #00fff2;
+}
 /*  */
 
 
@@ -311,7 +317,7 @@ tr{
     background-color: #000d47;
     color: #00fff2;
     grid-area: contactTag;
-    padding: 10px;
+    padding: 89px;
     height: 100vh;
 }
 fieldset{        
@@ -400,19 +406,19 @@ fieldset{
     .selectednav{
         background-color: #2bff00;
     }
-    #articlestelvio .articleParagraph  {
+    #articlestelvio .articletext  {
         width: 50%;
         float: right;
         position: relative;
         top: 10px;
     }
-    #articleOostenrijk .articleParagraph {
+    #articleOostenrijk .articletext {
         width: 50%;
         float: right;
         position: relative;
         top: 25px;
     }
-    #articleDuitsland .articleParagraph {
+    #articleDuitsland .articletext {
         width: 50%;
         float: right;
         position: relative;
@@ -433,7 +439,7 @@ fieldset{
         grid-area: duitslandTag;
         height: 300px;
     }
-    .articleImage {
+    .articlefoto {
         width: 400px;
         float: left;
         clear: both;
@@ -484,7 +490,7 @@ fieldset{
             'footerTag          footerTag           coockieTag          coockieTag'
             'footerTag          footerTag           coockieTag          coockieTag';
     }
-    .articleParagraph-best {
+    .articletext-best {
         width: 50%;
         float: left;
         position: relative;
@@ -550,6 +556,9 @@ fieldset{
         float: right;
         left: -43px;
         top: 0px;
+    }
+    #bestdestheader{
+        background-color: #00fff2;
     }
     
 
@@ -671,21 +680,21 @@ fieldset{
     #contactform{
         background-color: #ff04ab;
         grid-area: contactTag;
-        padding: 10px;
+        padding: 49px;
         height: 100vh;
     }
     #message{
         width: 500px;
         height: 100px;
-    }  
+    }      
 }
 /*  */
 
 
 
 
-/*mobile*/
-@media screen and (max-device-width: 480px) {
+/*mobile max-device-widht heb ik gebruikt omdat het anders niet werkte (Ik weet dat dit verouderd is)*/
+@media screen and (max-device-width: 480px) { 
     /* Hamburger meneu */
 	#itemshamnav a {
 		box-sizing: border-box;
@@ -767,7 +776,7 @@ fieldset{
     .selectednav{
         background-color: #2bff00;
     }
-    .articleParagraph {
+    .articletext {
         width: 50%;
         float: right;
         position: relative;
@@ -784,7 +793,7 @@ fieldset{
         background-color: #ff08b5;
         grid-area: duitslandTag;
     }
-    .articleImage {
+    .articlefoto {
         width: 400px;
         float: left;
         clear: both;
@@ -895,7 +904,7 @@ fieldset{
         top: 305px; 
         left: 41px;         
     }
-    .articleParagraph-best{
+    .articletext-best{
         height: 200px;
         font-size: 20px;
         padding: 10px;
