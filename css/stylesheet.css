@@ -96,12 +96,24 @@
     text-transform: uppercase;
     }
     #itemshamnav a:hover { 
-  background: #2bff00; 
+    background: #2bff00; 
     }  
     #hamburgernavigation label, #hamburger { 
-  display: none; 
+    display: none; 
     }
     /* */
+    .moreinfo:link{
+        color: #51ff00;
+    }
+    .moreinfo:visited{
+        color: #ff0040;
+    }
+    .moreinfo:hover{
+        color: #00ffdd;
+    }
+    .moreinfo:active{
+        color: #a200ff;
+    }
     body{
         font-family: Arial, Helvetica, sans-serif;
     }
@@ -189,13 +201,7 @@
 
 
 /* Tickets */
-#asideticketsimage1{
-    width: 24rem;
-}
-#asideticketsimage2{
-    width: 24rem;
-}
-#asideticketsimage3{
+#asideticketsimage1, #asideticketsimage2, #asideticketsimage3{
     width: 24rem;
 }
 #tabletickets{
@@ -292,18 +298,27 @@ tr{
     width: 450px;
     clear: both;
     padding: 2px;
+    border-color: #c300ff;
+    border-style: double;
+    border-width: 5px;
 }
 #asideimage2{
     position: relative;
     width: 450px;
     clear: both;
     padding: 2px;
+    border-color: #c300ff;
+    border-style: double;
+    border-width: 5px;
 }
 #asideimage3{
     position: relative;
     width: 450px;
     clear: both;
     padding: 2px;
+    border-color: #c300ff;
+    border-style: double;
+    border-width: 5px;
 }
 #bestdestheader{
     background-color: #00fff2;
@@ -331,8 +346,7 @@ tr{
 fieldset{        
     border-radius: 10px;
     border-color: #0e0185;
-    border-style: solid;
-    
+    border-style: solid;    
 }
 #message{
     width: 500px;
