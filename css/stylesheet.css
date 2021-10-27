@@ -26,7 +26,7 @@
 #grid-container-best {
             width: 100%;
             display: grid;
-        
+            grid-template-columns: auto auto auto;
             grid-template-areas:
                 'headerTag          headerTag           headerTag'
                 'navTag             navTag              navTag'        
@@ -81,7 +81,7 @@
  /*Hamburger Pc and tablet*/
     #hamburgernavigation {
     width: 100%;
-    background: rgb(204, 18, 18);  
+    background: #a02620;  
     }  
     #itemshamnav { 
       display: flex; 
@@ -466,7 +466,8 @@ fieldset{
 
 
     /*best dest */
-    #grid-container-best {                  
+    #grid-container-best {     
+        grid-template-rows: auto auto auto auto;             
         grid-template-areas:
             'headerTag          headerTag           headerTag           headerTag'
             'navTag             navTag              navTag              navTag'
@@ -571,6 +572,9 @@ fieldset{
             'copyTag            copyTag'
             'asideticketsTag     asideticketsTag'
             'footerTag          cookieTag';            
+    }
+    #Ticketsheader{
+        background-color: #00f7ff;        
     }
     #ticketimage3{
         width: 400px;
@@ -688,19 +692,22 @@ fieldset{
 		display: block;
 		width: 50%;
 		border-top: 1px solid #333;
+        
 	}
   
 	#hamburgernavigation label { 
 		display: inline-block; 
 		color: white;
-		background: #a02620;
+		background: #00f2fa;
 		font-style: normal;
 		font-size: 1.2em;
 		padding: 10px;
+        width: 50%;
 	}    
 
 	#itemshamnav { 
 		display: none; 
+        background: #a02620;
 	}
 	
 	#hamburgernavigation input:checked ~ #itemshamnav { 
@@ -746,7 +753,8 @@ fieldset{
         padding: 30px;
     }
     #Homeheader{
-      background-color: #5ccc00;    
+      background-color: #5ccc00;
+      width: 100%;    
     }  
     nav {
       background-color: #22cc00;
@@ -906,7 +914,8 @@ fieldset{
     /* tickets */
     #grid-container-tickets {            
         display: grid;
-        grid-template-columns: auto auto;            
+        grid-template-columns: auto auto; 
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto 2vh;           
         grid-template-areas:
             'headerTag          navTag'
             'headerTag          navTag'       
@@ -930,23 +939,22 @@ fieldset{
         width: 400px;
         padding: 10px;
         position: relative;
-        left: 30px;
+        left: -432px;
+        top: 239px;
     }
     #ticketimage1{
         width: 400px;
         padding: 10px;
         position: relative;
-        left: 30px;
+        left: -8px;
+        display: block;
     }
     #ticketimage2{
         width: 400px;
         padding: 10px;
         position: relative;
-        left: 60px;
-    }
-    #asidetickets{
-        align-items: center;
-    }
+        left: -8px;
+    }    
     #tabletickets{
         grid-area: ticketsTag;
         height: 1200px;
@@ -973,7 +981,7 @@ fieldset{
         grid-area: copyTag;
         background-color: #ff7cd8;
         text-align: center; 
-        height: 610px;       
+        height: 46px;       
     }    
     #ticketsinfo{
         display: none;        
@@ -981,7 +989,9 @@ fieldset{
     #asidetickets{
         grid-area: asideticketsTag;
         background-color: #850164;
-        padding: 10px;        
+        padding: 10px;    
+        height: 748px; 
+        align-items: center;   
     }    
     
 
@@ -1035,7 +1045,7 @@ fieldset{
     #contactform{
         background-color: #ff04ab;
         grid-area: contactTag;
-        padding: 10px;
+        padding: 46px;        
         height: 70vh;
     }
     #message{
