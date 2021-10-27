@@ -218,8 +218,14 @@ td, th {
     padding: 8px;
   }
 tr:first-child {
-    background-color: #9584fa;
+    background-color: #FF0;
   }
+td:nth-child(odd){
+    background-color: #FFF;
+}
+td:nth-child(even){
+    background-color: #CFF;
+}
 tr{
     background-color: #b1b6ff;
 }
@@ -232,6 +238,10 @@ tr{
     grid-area: ticketsinfoTag;
     background-color: #31fae9; 
     text-indent: 19em;   
+}
+#ticketsinfo::first-letter{
+    font-size: 35px;
+    color: #FFC72C;
 }
 #asidetickets{
     grid-area: asideticketsTag;
@@ -322,6 +332,9 @@ tr{
 }
 #bestdestheader{
     background-color: #00fff2;
+}
+nav + article{
+    color: #81e7ce;
 }
 /*  */
 
