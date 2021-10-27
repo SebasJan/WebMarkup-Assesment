@@ -216,12 +216,12 @@ tr{
 #copytable{
     grid-area: copyTag;
     background-color: #ff7cd8;
-    text-align: center;
-    
+    text-align: center;    
 }
 #ticketsinfo{
     grid-area: ticketsinfoTag;
-    background-color: #31fae9;    
+    background-color: #31fae9; 
+    text-indent: 19em;   
 }
 #asidetickets{
     grid-area: asideticketsTag;
@@ -249,6 +249,8 @@ tr{
 }
 .articletext-best{
     width: 40%;
+    letter-spacing: 0.5px;
+    line-height: 20px;
 }
 #destination1{
     grid-area: destination1Tag;
@@ -319,6 +321,7 @@ tr{
     grid-area: contactTag;
     padding: 89px;
     height: 100vh;
+    word-spacing: 2px;
 }
 fieldset{        
     border-radius: 10px;
@@ -494,6 +497,8 @@ fieldset{
         width: 50%;
         float: left;
         position: relative;
+        letter-spacing: 0.5px;
+        line-height: 17px;
     }    
     #destination4{
         display: none;
@@ -908,6 +913,8 @@ fieldset{
         height: 200px;
         font-size: 20px;
         padding: 10px;
+        letter-spacing: 0.5px;
+        line-height: 25px;
     }
     #bestdestheader{
         background-color: #15ff00;
@@ -1071,7 +1078,6 @@ fieldset{
     }
 }
 /*  */
-
 
 
 
