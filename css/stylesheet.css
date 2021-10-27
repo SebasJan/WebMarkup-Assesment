@@ -114,13 +114,13 @@
         grid-area: footerTag;
     }    
     #cookieStatement {
-        background-color: #ff6600;
+        background-color: #003cff;
         grid-area: cookieTag;
         position: fixed;
         right: 0;
         bottom: 0;
         width: 8    vw;
-        color: #fff;
+        color: rgb(14, 0, 0);
         opacity: 50%;
     }    
     #logo {
