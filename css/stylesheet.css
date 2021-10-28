@@ -8,6 +8,9 @@
 
 
 
+
+
+
 /*Pc grids*/
 #grid-container {
     width: 100%;
@@ -70,15 +73,71 @@
         }
 /*  */
 
-
+#gaterug{
+    color: #fff;
+}
+#gaterug:hover{
+    color: burlywood;
+}
+#bodyvoorwaarde{
+    background-color: rgb(0, 0, 0);
+}
+#voorwaardeinformatie{
+    position: absolute;    
+    top: 40%;
+    left: 20%;   
+    color: #fff;
+}
 
 
         
 /* PC MEDIA */
-@media screen and (min-width: 1180px) {        
+@media screen and (min-width: 1180px) {    
 
- /* Index en algemeen */   
- /*Hamburger Pc and tablet*/
+/* Coockie message */
+.coockiemessage {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #ff00ff; 
+    color: rgb(0, 0, 0);       
+}
+.closecoockie {
+    border: none;
+    color: white;
+    background-color: #6b0451;
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    top: 0;
+    cursor: pointer;
+    border-radius: 3px;    
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.checkboxcoockie {
+    display: none;
+}
+.checkboxcoockie:checked + .coockiemessage {
+      transform: translateY(-50px);
+}  
+a {
+    color: rgb(92, 242, 255);;
+}
+/*  */
+
+    /* Index en algemeen */   
+    /*Hamburger Pc and tablet*/
     #hamburgernavigation {
     width: 100%;
     background: #a02620;  
@@ -375,6 +434,49 @@ fieldset{
 
 /*tablet media*/
 @media screen and (min-width: 481px) and (max-width: 1179px) {
+
+/* Coockie message */
+.coockiemessage {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #ff00ff; 
+    color: rgb(0, 0, 0);       
+}
+.closecoockie {
+    border: none;
+    color: white;
+    background-color: #6b0451;
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    top: 0;
+    cursor: pointer;
+    border-radius: 3px;    
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.checkboxcoockie {
+    display: none;
+}
+.checkboxcoockie:checked + .coockiemessage {
+      transform: translateY(-50px);
+}  
+a {
+    color: rgb(92, 242, 255);;
+}
+/*  */
+
     /* Index en algemeen */
     /*Hamburger Pc and tablet*/
     #hamburgernavigation {
@@ -734,8 +836,11 @@ fieldset{
 
 
 /*mobile max-device-widht heb ik gebruikt omdat het anders niet werkte (Ik weet dat dit verouderd is)*/
-@media screen and (max-device-width: 480px) { 
-    /* Hamburger meneu */
+@media screen and (max-device-width: 480px) {
+    .coockiemessage{
+        display: none;
+    }
+/* Hamburger meneu */
 	#itemshamnav a {
 		box-sizing: border-box;
 		display: block;
