@@ -192,11 +192,11 @@ a {
         padding: 50px;       
         grid-area: asideTag;       
         flex-basis: auto;
-        flex-grow: 1;
-        flex-shrink: 1; 
+        flex-grow: 0;
+        flex-shrink: 0; 
         flex-wrap: wrap;  
         order: 5;
-        height: 100px;              
+        height: 100px;    
     }
     article {
         padding: 30px; 
