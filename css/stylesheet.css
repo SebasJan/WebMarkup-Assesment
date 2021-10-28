@@ -237,6 +237,7 @@ tr{
 #ticketsinfo{
     grid-area: ticketsinfoTag;
     background-color: #31fae9; 
+    color: #0e0185;
     text-indent: 19em;   
 }
 #ticketsinfo::first-letter{
