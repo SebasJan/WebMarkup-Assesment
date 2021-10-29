@@ -6,11 +6,6 @@
 }
 /*  */
 
-
-
-
-
-
 /*Pc grids*/
 .flexbox{
     display: flex;
@@ -30,7 +25,6 @@
                 'asidebestTag       asidebestTag        asidebestTag'
                 'footerTag          footerTag           cookieTag';    
         }
-
  #grid-container-tickets {            
             display: grid;
             grid-template-columns: 40% 35% auto;            
@@ -47,7 +41,6 @@
                 'copyTag            copyTag         asideticketsTag'
                 'footerTag          footerTag       cookieTag';            
         }
-
 #grid-container-contact {            
             display: grid;
             grid-template-columns: 30% 30% auto;            
@@ -64,6 +57,8 @@
         }
 /*  */
 
+
+/* voorwaarde.html */
 #gaterug{
     color: #fff;
 }
@@ -79,12 +74,11 @@
     left: 20%;   
     color: #fff;
 }
-
+/*  */
 
         
 /* PC MEDIA */
 @media screen and (min-width: 1180px) {    
-
 /* Coockie message */
 .coockiemessage {
     z-index: 999;
@@ -115,7 +109,6 @@
     font-size: 16px;
     font-weight: bold;
 }
-
 .checkboxcoockie {
     display: none;
 }
@@ -127,19 +120,20 @@ a {
 }
 /*  */
 
-    /* Index en algemeen */   
-    #bodyindex{
-        background-color: #ff0000;
-    }
-    /*Hamburger Pc and tablet*/
-    #hamburgernavigation {
+
+/* Index en algemeen */   
+#bodyindex{
+    background-color: #ff0000;
+}
+/*Hamburger Pc and tablet*/
+#hamburgernavigation {
     width: 100%;
     background: #a02620;  
-    }  
-    #itemshamnav { 
-      display: flex; 
-    }  
-    #itemshamnav a {
+}  
+#itemshamnav { 
+    display: flex; 
+}  
+#itemshamnav a {
     flex-grow: 1;
     flex-basis: 0;
     padding: 10px;
@@ -147,92 +141,92 @@ a {
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
-    }
-    #itemshamnav a:hover { 
+}
+#itemshamnav a:hover { 
     background: #2bff00; 
-    }  
-    #hamburgernavigation label, #hamburger { 
+}  
+#hamburgernavigation label, #hamburger { 
     display: none; 
-    }
-    /* */
+}
 
-    .moreinfo:link{
+/* */
+.moreinfo:link{
         color: #51ff00;
-    }
-    .moreinfo:visited{
-        color: #ff0040;
-    }
-    .moreinfo:hover{
-        color: #00ffdd;
-    }
-    .moreinfo:active{
-        color: #a200ff;
-    }
-    body{
-        font-family: Arial, Helvetica, sans-serif;
-    }
+}
+.moreinfo:visited{
+    color: #ff0040;
+}
+.moreinfo:hover{
+    color: #00ffdd;
+}
+.moreinfo:active{
+    color: #a200ff;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-    #Homeheader{
-        background-color: #5ccc00;
-        flex-basis: 100%;
-        flex-grow: 1;
-        flex-shrink: 1; 
-        order: 2;   
-    } 
-    nav {
-        background-color: #22cc00;
-        grid-area: navTag;
-        flex-basis: 100%;
-        flex-grow: 1;
-        flex-shrink: 1;
-        order: 3; 
-    } 
-    #asideHome {
-        background-color: #ff0000;              
-        padding: 50px;       
-        grid-area: asideTag;       
-        flex-basis: auto;
-        flex-grow: 0;
-        flex-shrink: 0; 
-        flex-wrap: wrap;  
-        order: 5;
-        height: 100px;    
-    }
-    article {
-        padding: 30px; 
-        flex-basis: 58%;       
-        flex-wrap: nowrap;        
-    }      
-    #footer {
-        background-color: #ff9204;
-        grid-area: footerTag;
-        font-family: 'Notable', sans-serif; 
-        flex-basis: 100%;
-        flex-grow: 1;
-        flex-shrink: 1; 
-        order: 8;     
-    } 
-    #cookieStatement {
-        color: white;        
-        grid-area: cookieTag;
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        width: 8vw;
-        background-color: #FA0;
-        opacity: 50%;
-        flex-basis: 100%;
-        flex-grow: 1;
-        flex-shrink: 1; 
-        z-index: 999;
-    }    
-    #logo {
-        width: 100px;
-        flex-basis: 100%;
-        flex-grow: 1;
-        flex-shrink: 1;
-        order: 1; 
-    }    
+#Homeheader{
+    background-color: #5ccc00;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1; 
+    order: 2;   
+} 
+nav{
+    background-color: #22cc00;
+    grid-area: navTag;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    order: 3; 
+} 
+#asideHome{
+    background-color: #ff0000;              
+    padding: 50px;       
+    grid-area: asideTag;       
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0; 
+    flex-wrap: wrap;  
+    order: 5;
+    height: 100px;    
+}
+article{
+    padding: 30px; 
+    flex-basis: 58%;       
+    flex-wrap: nowrap;        
+}      
+#footer {
+    background-color: #ff9204;
+    grid-area: footerTag;
+    font-family: 'Notable', sans-serif; 
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1; 
+    order: 8;     
+} 
+#cookieStatement {
+    color: white;        
+    grid-area: cookieTag;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 8vw;
+    background-color: #FA0;
+    opacity: 50%;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1; 
+    z-index: 999;
+}    
+#logo {
+    width: 100px;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    order: 1; 
+}    
     #video {
         background-color: #ad48ff;
         grid-area: videoTag;
